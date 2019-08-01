@@ -19,7 +19,7 @@
 
 <?php
 
-if (isset($_POST['nama']))
+if (isset($_POST['submit']))
 {
    echo "Nama Anda Adalah : ";
    echo $_post['nama'];
