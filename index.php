@@ -21,8 +21,9 @@
 
 if (isset($_POST['submit']))
 {
+   $nama = $_POST['nama'];
    echo "Nama Anda Adalah : ";
-   echo $_post['nama'];
+   echo $nama;
 }
 
 ?>
