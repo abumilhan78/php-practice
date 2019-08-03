@@ -11,7 +11,7 @@
         <label>Nama : </label>
         <input type="text" name="nama">
         <br>
-        <input type="button" value="submit">
+        <input type="submit" value="submit">
 
     </form>
 </body>
