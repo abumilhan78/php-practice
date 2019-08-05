@@ -7,11 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method = "POST">
-        <label>Nama : </label>
-        <input type="text" name="nama">
+    <form action="index.php" method = "POST">
+        Input Your Name : <input type="text" name="nama">
         <br>
-        <input type="button" value="submit">
+        <input type="submit" value="submit">
 
     </form>
 </body>
@@ -22,7 +21,7 @@
 if (isset($_POST['nama']))
 {
    echo "Nama Anda Adalah : ";
-   echo $_post['nama'];
+   echo $_POST['nama'];
 }
 
 ?>
