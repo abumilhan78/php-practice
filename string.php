@@ -14,6 +14,18 @@ for ($i=1; $i<=256; $i++) {
 echo "<br>$i.\t". chr($i);
 }
 
+echo "<br><br><br>Strip Tags!<br><br>";
+$string = "<b><u>Everything I do, I do it for you</u></b>";
+echo $string."<br>";
+//no tag html
+echo strip_tags ($string). "<br>";
+//allow tag <u>
+echo strip_tags ($string,"<u>")."<br>";
+//tampil apa adanya
+echo htmlspecialchars ($string)."<br>";
+//tampil apa adanya
+echo htmlentities ($string);
+
 ?>
 
 
