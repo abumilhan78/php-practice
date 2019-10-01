@@ -9,11 +9,14 @@ class Produk{
            $waktuMain = 0,
            $tipe;
 
-    public function __construct($judul, $penulis, $penerbit, $harga,$tipe){
+    public function __construct($judul, $penulis, $penerbit, $harga,$jmlHalaman,$waktuMain,$tipe){
         $this->judul = $judul;
         $this->penulis = $penulis;
         $this->penerbit = $penerbit;
         $this->harga = $harga;
+        $this->tipe = $tipe;
+        $this->jmlHalaman = $jmlHalaman;
+        $this->waktuMain = $waktuMain;
         $this->tipe = $tipe;
     }
 
@@ -40,10 +43,12 @@ class cetakInfoProduk{
     }
 }
 
-$produk1 = new Produk("Naruto","Mashashi Kishimoto","Shonen Jump",30000,"komik");
+$produk1 = new Produk("Naruto","Mashashi Kishimoto","Shonen Jump",30000,100,0,"komik");
 
 
-$produk2 = new Produk("Uncharted","Neil Druckman","Sony Computer",250000,"game");
+$produk2 = new Produk("Uncharted","Neil Druckman","Sony Computer",250000,0,50,"game");
+
+echo $produk1->getInfoLengkap();
 
 
 ?>
