@@ -14,10 +14,6 @@ class Produk{
         $this->harga = $harga;
     }
 
-    public function getDiskon($diskon){
-        $this->diskon = $diskon;
-    }
-
     public function getLabel(){
         return "$this->penulis, $this->penerbit";
     }
@@ -59,6 +55,10 @@ class Game extends Produk{
       $this->waktuMain = $waktuMain;
     }
 
+    public function setDiskon($diskon){
+        $this->diskon = $diskon;
+    }
+
     public function getInfoProduk(){
         $str = "Game : ". parent::getInfoProduk() ." - {$this->waktuMain} Jam.";
         return $str;
@@ -83,7 +83,7 @@ $produk2 = new Game("Uncharted","Neil Druckman","Sony Computer",250000,50);
 echo $produk1->getInfoProduk(). "<br>";
 echo $produk2->getInfoProduk(). "<hr>";
 
-$produk2->getDiskon(50);
+$produk2->setDiskon(50);
 echo $produk2->getHarga();
 
 ?>
